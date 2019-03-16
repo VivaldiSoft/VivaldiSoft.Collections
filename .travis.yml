@@ -1,0 +1,9 @@
+language: csharp
+solution: VivaldiSoft.Collections.sln
+mono: latest
+dotnet: 2.0.0
+script:
+  - dotnet restore
+  - dotnet build ./src/VivaldiSoft.Collections/
+  - dotnet build ./tests/VivaldiSoft.Collections.Tests/
+  - dotnet test ./tests/VivaldiSoft.Collections.Tests/
